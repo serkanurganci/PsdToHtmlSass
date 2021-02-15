@@ -1,0 +1,106 @@
+.aboutRow {
+  .col-left {
+    padding-right: 30px;
+    border-right: 1px solid #e5e5e5;
+    p {
+      color: #a3a3a3;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .col-left-images {
+      padding-top: 12px;
+      width: 100%;
+      .col-md-4 {
+        img {
+          width: 100%;
+        }
+      }
+      .ourStaff {
+        position: relative;
+        padding: 0;
+        margin-bottom: 15px;
+        cursor: pointer;
+        &:hover .ourStaffOverlay {
+          height: 100%;
+        }
+        img {
+          display: block;
+          width: 90% !important;
+          height: auto;
+        }
+        .ourStaffOverlay {
+          width: 90%;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          top: 0;
+          overflow: hidden;
+          background-color: $turquoise;
+          opacity: 0.7;
+          height: 0;
+          transition: all 0.5s;
+          .ourStaffText {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            font-weight: 500;
+            h6 {
+              font-size: 0.8rem;
+              font-weight: 600;
+            }
+            p {
+              font-size: 0.6rem;
+              margin: 0;
+              border: 0;
+              padding: 0;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .col-right {
+    padding-left: 30px;
+
+    .skillRow {
+      h6 {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      .progress {
+        background-color: #fff;
+        border: 1px solid #e2e2e2;
+        border-radius: 0;
+        height: 1.5rem;
+        .progress-bar {
+          background-color: #e2e2e2;
+        }
+      }
+    }
+    .testimonialsRow {
+      border: 1px solid #e2e2e2;
+
+      .testimonialsArea {
+        background-color: $turquoise;
+        max-height: 80px;
+
+        p {
+          height: 100%;
+          line-height: 80px;
+          vertical-align: center;
+          margin: 0 !important;
+          font-size: 0.7rem;
+          color: #fff;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

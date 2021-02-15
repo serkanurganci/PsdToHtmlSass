@@ -1,0 +1,103 @@
+#sideBar.active {
+    margin-left: -300px;
+  }
+  #sideBar {
+    color: #fff;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: #232b2d;
+    transition: margin-left 0.3s;
+    .navbar {
+      padding: 0;
+      .navbar-brand {
+        background: $white;
+        margin: 0;
+        padding: 28px 0;
+        text-align: center;
+      }
+      .main-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        .nav-item {
+          border: 0;
+          text-align: end;
+          border: 1px solid $black;
+          border-right: none;
+          border-left: none;
+        }
+        .nav-item:last-child {
+          border-bottom: 0;
+        }
+        .nav-item:first-child {
+          border-top: 0;
+        }
+        .nav-item .nav-link {
+          font-size: 0.8rem;
+          background-color: #333b3f;
+          padding: 1.25rem 1.5rem 1.25rem 1rem;
+          color: #fff;
+          font-weight: 300;
+          transition: 0.5s;
+
+          &:hover {
+            background-color: $turquoise;
+            border-color: $turquoise;
+          }
+        }
+      }
+      .sidebar-heading {
+        font-size: 1rem;
+        text-align: end;
+        margin: 1.1rem 1rem 1rem 0;
+        span {
+          color: $turquoise;
+          font-weight: 300;
+          padding-right: 0.5rem;
+          letter-spacing: 2px;
+          vertical-align: bottom;
+        }
+      }
+      .works-menu {
+        list-style-type: none;
+        .nav-item {
+          width: 100%;
+          border: 0;
+          outline: 0;
+          .nav-link {
+            text-align: end;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: $light-gray;
+            padding: 0.5rem 1.5rem 0.5rem 1rem;
+            transition: 0.5s;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .social {
+        @include display(flex, row, flex-end, center);
+        margin-bottom: 0;
+        .nav-item {
+          width: 1.5rem;
+          height: 1.5rem;
+          list-style-type: none;
+          margin-right: 0.55rem;
+          .nav-link {
+            padding: 0;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+      .copyright {
+        font-size: 0.6rem;
+        color: $light-gray;
+        text-align: end;
+        margin: 1.5rem 1.5rem 1rem 1rem;
+      }
+    }
+  }

@@ -1,0 +1,75 @@
+.contactContent {
+  background: url(../images/contact/map.jpg);
+  .pageRow {
+    padding: 2rem;
+    .col-left {
+      background-color: #fff;
+      padding: 2rem;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        color: $ex-light-gray;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  .commentForm {
+    .row {
+      .commentFormLeft {
+        div {
+          margin-bottom: 0.8rem;
+          border: 1px solid #e2e2e2;
+          i {
+            font-size: 0.8rem;
+            color: $turquoise;
+            border: 1px solid $turquoise;
+            border-radius: 50%;
+            padding: 0.5rem;
+            margin: 8px;
+          }
+          input {
+            padding: 1rem;
+            border: none;
+            border-left: 1px solid #e2e2e2;
+            outline: none;
+            -webkit-appearance: none;
+          }
+          input:focus,
+          input:link {
+            outline: none;
+            border-color: #e2e2e2;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .commentFormRight {
+        textarea {
+          padding: 1rem;
+          height: 7.8rem;
+          width: 100%;
+          border: 1px solid #e2e2e2;
+          box-shadow: none;
+          margin-bottom: 0.8rem;
+          &:hover,
+          &:focus,
+          &:active,
+          &:link {
+            border: 1px solid #e2e2e2 !important;
+            outline: none;
+          }
+        }
+        button {
+          background-color: $turquoise;
+          color: #fff;
+          padding: 1rem 0;
+          width: 100%;
+          border-radius: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

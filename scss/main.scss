@@ -1,0 +1,174 @@
+@import "./media";
+
+//Variables --------------------------
+$black: #000;
+$white: #fff;
+$light-gray: #666b6d;
+$turquoise: #24b0af;
+$ex-light-gray: #b4b7b8;
+
+
+@mixin display($display: flex, $flex: row, $align: center, $justify: center) {
+  display: $display;
+  flex-direction: $flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+
+  //    SideBarNav--------------------------
+  @import "./sidebarNav.scss";
+
+  //   Content ----------------------------------------------
+  .content {
+    width: 100%;
+    height: auto;
+    .container-fluid {
+      padding: 0;
+      //    SideBar Nav Button-------------------------------------------
+      #collapseBtn {
+        background-color: $turquoise;
+        position: fixed;
+        z-index: 99;
+        border: none !important;
+        &:hover,
+        &:focus,
+        &:link,
+        &:active {
+          outline: none !important;
+          box-shadow: none;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      //   Home Content ----------------------------------------------
+      @import "./pages/home.scss";
+
+      .content-area-gray {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: 20px;
+          font-weight: 400;
+        }
+        background-color: $ex-light-gray;
+        padding: 25px;
+
+        .content-area-white {
+          background-color: #fff;
+          padding: 30px;
+
+          .row {
+            .col-left {
+              padding-right: 30px;
+              border-right: 1px solid #e5e5e5;
+              p {
+                color: #a3a3a3;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #e5e5e5;
+              }
+
+              .col-left-images {
+                padding-top: 12px;
+                width: 100%;
+                .col-md-4 {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .col-right {
+              padding-left: 30px;
+
+              .notification {
+                p {
+                  color: $light-gray;
+                  margin: 0;
+                  padding: 25px 0;
+                  font-weight: 400;
+                  border-bottom: 1px solid #e5e5e5;
+                  .fas,
+                  .far {
+                    color: $turquoise;
+                    padding: 11px;
+                    border: 1px solid $turquoise;
+                    border-radius: 50%;
+                    margin-right: 13px;
+                  }
+                }
+              }
+
+              .tags {
+                @include display(flex, row, center, start);
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+                span {
+                  color: #a3a3a3;
+                  padding: 13px 21px;
+                  margin-right: 10px;
+                  margin-top: 10px;
+                  border: 1px solid #dbdbdb;
+                  border-radius: 1rem;
+                }
+              }
+
+              .project-gallery {
+                margin-bottom: 30px;
+                img {
+                  margin: 0;
+                  padding: 12px 2px 0 0;
+                }
+              }
+
+              .project-features {
+                p {
+                  font-weight: 1000;
+                  span {
+                    font-weight: 400;
+                    color: #a3a3a3;
+                  }
+                }
+              }
+            }
+          }
+          //   Work Content ----------------------------------------------
+          @import "./pages/work.scss";
+
+          //   About Content ----------------------------------------------
+          @import "./pages/about.scss";
+
+          //   Services Content ----------------------------------------------
+          @import "./pages/services.scss";
+        }
+      }
+      //    Info Side Bar------------------------------------------------
+      @import "./sidebarInfo.scss";
+    }
+     //   Blog Content ----------------------------------------------
+     @import "./pages/blog.scss";
+  }
+
+  //   Contact Content ----------------------------------------------
+  @import "./pages/contact.scss";
+}

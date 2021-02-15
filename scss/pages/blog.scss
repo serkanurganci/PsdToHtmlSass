@@ -1,0 +1,58 @@
+.blogRow {
+  .col-half-offset {
+    margin-left: 4.166666667%;
+  }
+  .card-body {
+    .card-text {
+      font-size: 0.8rem;
+      color: #797474;
+    }
+    .notification {
+      font-size: 0.8rem;
+      color: #797474;
+      span:nth-child(1) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: $turquoise;
+    top: calc(50% - 16px);
+    bottom: calc(50% - 16px);
+  }
+
+  .blogCard2 {
+    background-color: $turquoise;
+    color: white;
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-break: 0;
+    }
+    a {
+      font-size: 0.8rem;
+      color: white;
+    }
+  }
+
+  .blogCard4 {
+    background-color: #242b2e !important;
+    color: white;
+
+    blockquote {
+      font-size: 0.8rem !important;
+      font-style: italic;
+    }
+    .comma {
+      color: $turquoise;
+      font-size: 2rem;
+      margin: 0;
+      height: 10%;
+    }
+    .arbiter {
+      color: $turquoise;
+    }
+  }
+}

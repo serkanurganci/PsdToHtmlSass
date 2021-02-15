@@ -1,0 +1,97 @@
+.servicesRow {
+  .comments {
+    .comment-space {
+      width: 80px;
+      height: 80px;
+      float: left;
+      position: relative;
+      .comment-border {
+        width: 50%;
+        height: 50%;
+        border-left: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        position: absolute;
+        right: 20%;
+      }
+    }
+    .media {
+      @include display(flex, row, end, start);
+      .media-body {
+        margin-left: 1rem !important;
+        h5 {
+          border-bottom: 1px solid #e2e2e2;
+          display: inline-block;
+          padding-bottom: 0.5rem;
+          font-size: 0.9rem;
+          font-weight: 500;
+          span {
+            opacity: 0.7;
+          }
+        }
+        p {
+          border-bottom: 0 !important;
+
+          padding-bottom: 0.5rem !important;
+        }
+      }
+    }
+  }
+
+  .commentForm {
+    .row {
+      .commentFormLeft {
+        div {
+          margin-bottom: 0.8rem;
+          border: 1px solid #e2e2e2;
+          i {
+            font-size: 0.8rem;
+            color: $turquoise;
+            border: 1px solid $turquoise;
+            border-radius: 50%;
+            padding: 0.5rem;
+            margin: 8px;
+          }
+          input {
+            padding: 1rem;
+            border: none;
+            border-left: 1px solid #e2e2e2;
+            outline: none;
+            -webkit-appearance: none;
+          }
+          input:focus,
+          input:link {
+            outline: none;
+            border-color: #e2e2e2;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .commentFormRight {
+        textarea {
+          padding: 1rem;
+          height: 7.8rem;
+          width: 100%;
+          border: 1px solid #e2e2e2;
+          box-shadow: none;
+          margin-bottom: 0.8rem;
+          &:hover,
+          &:focus,
+          &:active,
+          &:link {
+            border: 1px solid #e2e2e2 !important;
+            outline: none;
+          }
+        }
+        button {
+          background-color: $turquoise;
+          color: #fff;
+          padding: 1rem 0;
+          width: 100%;
+          border-radius: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
