@@ -10,7 +10,7 @@ Kendimi geliştirmek için yapmış olduğum bir Psd to HTML & Sass & Bootstrap 
 ## İmages
 
 #### Home  
-![homeSS](https://user-images.githubusercontent.com/71039908/107929509-cb2fa780-6f8a-11eb-81e1-d25e4257f4fe.PNG)
+![homeSS](https://user-images.githubusercontent.com/71039908/107945510-ca097500-6fa0-11eb-8b54-5b322fe9d7ae.PNG)
 
 #### Work  
 ![workSS](https://user-images.githubusercontent.com/71039908/107929518-cec32e80-6f8a-11eb-8724-711f0e1faffd.PNG)
