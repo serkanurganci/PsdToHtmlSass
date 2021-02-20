@@ -3,9 +3,9 @@
 Kendimi geliştirmek için yapmış olduğum bir Psd to HTML & Sass & Bootstrap projesidir. Herhangi bir ticari amaç için kullanılmamıştır. Psd dosyası hazır olarak internetten indirildi.
 
 ## Qualities
-* *Full Responsive Tasarım.*
-* *Sayfa yapısında Bootstrap grid sistemi kullanıldı.*
-* *%90 ve üzeri oranda Psd tasarımına bağlı kalındı.*
+* *Full responsive design*
+* *Bootstrap grid system*
+* *Collapse navbar*
 
 ## İmages
 
